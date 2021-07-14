@@ -45,7 +45,7 @@
           <li class="active"><a href="homepage.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="http://127.0.0.1:5000/tweet_pred">Get Started</a></li>
+          <li><a href="http://127.0.0.1:3000/tweet_pred">Get Started</a></li>
 
         </ul>
       </nav>
@@ -200,7 +200,7 @@
                 function mytweet() {
                   var text = document.getElementById('twitter_handle').value;
                   console.log(text);
-                  const url = 'http://127.0.0.1:5000/tweet_pred';
+                  const url = 'http://127.0.0.1:3000/tweet_pred';
                   let send_data = JSON.stringify({
                     'handle': text
                   });
@@ -225,12 +225,12 @@
                   });
                 }
                 function myres(){
-                  window.location.href = "http://127.0.0.1:5000/tweet_pred";
+                  window.location.href = "http://127.0.0.1:3000/tweet_pred";
                 }          
                 function myfollowers() {
                   var text = document.getElementById('twitter_handle').value;
                   console.log(text);
-                  const url = 'http://127.0.0.1:5000/follow_pred';
+                  const url = 'http://127.0.0.1:3000/follow_pred';
                   let send_data = JSON.stringify({
                   'handle': text
                   });
