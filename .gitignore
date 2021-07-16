@@ -1,5 +1,7 @@
 dataset/
 __pycache__/
+/server/models/bert_base_model.h5
+/server/models/pretrained_BERT/
 .ipynb_checkpoints/
 personality_env/
 /server/static/results.js
